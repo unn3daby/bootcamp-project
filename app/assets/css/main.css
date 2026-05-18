@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Stolzl", sans-serif;
+  --font-stolzl-book: "Stolzl Book", sans-serif;
+  --font-halvar: "Halvar Breit", sans-serif;
+}
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-halvar);
+  }
+}
