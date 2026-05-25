@@ -1,12 +1,5 @@
 <template>
-  <div>hello</div>
+  <nuxt-page />
 </template>
 
-<script lang="ts" setup>
-const a = 1213;
-const b = 'asdasdasd';
-
-function test() {
-  return a + b;
-}
-</script>
+<script lang="ts" setup></script>
