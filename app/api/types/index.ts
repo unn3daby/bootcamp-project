@@ -1,2 +1,2 @@
-export * from './sections'
-export * from './form'
+export * from './form';
+export * from './sections';

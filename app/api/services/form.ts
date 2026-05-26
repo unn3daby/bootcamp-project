@@ -1,5 +1,6 @@
-import { apiClient } from '../client'
-import type { FormPayload, FormResponse } from '../types/form'
+import type { FormPayload, FormResponse } from '@/api/types';
+import { apiClient } from '@/api/client';
 
-export const submitForm = (payload: FormPayload) =>
-  apiClient<FormResponse>('/form', { method: 'POST', body: payload })
+export function submitForm(payload: FormPayload) {
+  return apiClient<FormResponse>('/form', { method: 'POST', body: payload });
+}

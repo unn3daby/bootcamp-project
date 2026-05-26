@@ -1,6 +1,4 @@
-import {externalApi} from "../utils/externalApi";
-
-type ContactMethod = 'telegram' | 'whatsapp' | 'email'
+type ContactMethod = 'telegram' | 'whatsapp' | 'email';
 
 interface FormBody {
   name?: string
@@ -14,14 +12,14 @@ function isValidForm(b: unknown): b is FormBody {
 }
 
 export default defineEventHandler(async (event) => {
-  const body = await readBody(event)
+  const body = await readBody(event);
 
   if (!isValidForm(body)) {
     throw createError({
       statusCode: 400,
       data: { code: 'validation', message: 'Invalid form payload' },
-    })
+    });
   }
 
-  return externalApi('/form', { method: 'POST', body })
-})
+  return externalApi('/form', { method: 'POST', body });
+});
