@@ -11,7 +11,6 @@ interface ServerErrorPayload {
 export const apiClient = $fetch.create({
   baseURL: '/api',
   onRequest({ options }) {
-    // TODO: после подключения i18n прокинуть хук useI18n, откуда вытащить текущую локаль
     const locale = useLocale();
     options.query = { lang: locale.value, ...options.query };
   },
