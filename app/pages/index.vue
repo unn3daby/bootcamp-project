@@ -1,6 +1,8 @@
 <template>
   <div>
-    index
+    <shared-cube-button>
+      cube button)
+    </shared-cube-button>
   </div>
 </template>
 
