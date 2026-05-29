@@ -1,7 +1,7 @@
 <template>
   <div>
     <shared-cube-button>
-      cube button)
+      JOIN THE TEAM
     </shared-cube-button>
   </div>
 </template>

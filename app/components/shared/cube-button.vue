@@ -1,7 +1,7 @@
 <template>
   <button
     type="button"
-    class="group relative inline-flex items-center justify-center border-none bg-transparent p-0 cursor-pointer font-inherit text-(--secondary)"
+    class="group relative tracking-[20%] inline-flex bg-transparent uppercase cursor-pointer font-medium text-(--secondary)"
   >
     <svg
       class="absolute inset-0 w-full h-full block pointer-events-none"
