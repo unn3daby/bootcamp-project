@@ -74,7 +74,7 @@
             <div class="flex justify-center">
               <button
                 :disabled="loading"
-                class="bg-yellow-400 hover:bg-yellow-500 font-bold px-10 py-2 rounded-full text-sm transition-colors disabled:opacity-50"
+                class="bg-[#FEE97D] hover:bg-[#f5dc5a] font-halvar font-bold px-10 py-2 rounded-md text-sm transition-colors disabled:opacity-50"
                 @click="submit"
               >
                 Submit
@@ -92,7 +92,7 @@
                 We will process your request<br />and get in touch with you
               </p>
               <button
-                class="bg-yellow-400 hover:bg-yellow-500 font-bold px-10 py-2 rounded-full text-sm transition-colors"
+                class="bg-[#FEE97D] hover:bg-[#f5dc5a] font-halvar font-bold px-10 py-2 rounded-md text-sm transition-colors"
                 @click="close"
               >
                 Done
