@@ -7,9 +7,9 @@
 
       <div class="flex lg:flex-row flex-col gap-8">
         <div class="lg:pl-10 lg:p-0 p-4">
-          <benefits-title class="lg:pr-10" :text="benefitsInfo.title" :highlighted="['guaranteed', 'гарантировать']" />
+          <benefits-title class="lg:pr-10" :text="benefitsInfo?.title ?? ''" :highlighted="['guaranteed', 'гарантировать']" />
           <p class="xl:text-[20px] lg:pr-80">
-            {{ benefitsInfo.description }}
+            {{ benefitsInfo?.description }}
           </p>
         </div>
 
@@ -18,7 +18,7 @@
         </div>
 
         <div class="flex flex-col gap-4 xl:min-w-150 lg:pr-10 lg:p-0 p-4 relative xl:mt-30 lg:mt-20 with-img xl:text-xl text-md">
-          <benefits-card v-for="(card, i) in benefitsInfo.benefits" :key="i">
+          <benefits-card v-for="(card, i) in benefitsInfo?.benefits" :key="i">
             {{ card }}
           </benefits-card>
         </div>
@@ -32,10 +32,12 @@
 </template>
 
 <script setup lang="ts">
-import { useBenefits } from '~/composables/benefits/useBenefits';
+import { getBenefits } from '~/api/services';
 
-const { fetchBenefits, benefitsInfo } = useBenefits();
-onBeforeMount(fetchBenefits);
+const { data: benefitsInfo } = useAsyncData(
+  'benefits',
+  getBenefits,
+);
 </script>
 
 <style scoped>
