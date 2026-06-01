@@ -1,5 +1,5 @@
 import type { ApiErrorCode } from './errors';
-import { useLocale } from '~/composables/locale';
+import { useLocale } from '@/composables/locale';
 import { ApiError } from './errors';
 
 interface ServerErrorPayload {

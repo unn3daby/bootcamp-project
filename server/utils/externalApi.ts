@@ -1,5 +1,3 @@
-import { normalizeError } from './normalizeError';
-
 export function externalApi<T = unknown>(path: string, opts: Parameters<typeof $fetch>[1] = {}): Promise<T> {
   const config = useRuntimeConfig();
 
