@@ -1,13 +1,25 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Stolzl", sans-serif;
-  --font-stolzl-book: "Stolzl Book", sans-serif;
+  --font-sans: "Halvar Breit", sans-serif;
   --font-halvar: "Halvar Breit", sans-serif;
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
 }
 
 @layer base {
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-halvar);
+  }
+
+  :root {
+    --primary: #9E13E0;
+    --secondary: #FEE97D;
+    --primary-gradient: linear-gradient(111.06deg, #DC8400 -3.49%, #560080 49.69%, #220032 91.86%);
+    --secondary-gradient: linear-gradient(121.08deg, #9500DC -3.37%, #560080 56.37%, #220032 102.54%);
+  }
+
+  html {
+    overscroll-behavior: none;
   }
 }

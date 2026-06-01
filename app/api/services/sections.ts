@@ -1,11 +1,14 @@
-import { apiClient } from '../client'
-import type { Benefits, Multiply, Tasks } from '../types/sections'
+import type { Benefits, Multiply, Tasks } from '../types/sections';
+import { apiClient } from '../client';
 
-export const getBenefits = () =>
-  apiClient<Benefits>('/sections/benefits')
+export function getBenefits() {
+  return apiClient<Benefits>('/sections/benefits');
+}
 
-export const getMultiply = () =>
-  apiClient<Multiply>('/sections/multiply')
+export function getMultiply() {
+  return apiClient<Multiply>('/sections/multiply');
+}
 
-export const getTasks = () =>
-  apiClient<Tasks>('/sections/tasks')
+export function getTasks() {
+  return apiClient<Tasks>('/sections/tasks');
+}

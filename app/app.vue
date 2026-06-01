@@ -1,3 +1,8 @@
 <template>
-  <div>hello</div>
+  <nuxt-layout>
+    <nuxt-page />
+  </nuxt-layout>
 </template>
+
+<script lang="ts" setup>
+</script>
