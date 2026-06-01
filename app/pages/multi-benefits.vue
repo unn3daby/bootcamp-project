@@ -7,7 +7,7 @@
 
       <div class="flex lg:flex-row flex-col gap-8">
         <div class="lg:pl-10 lg:p-0 p-4">
-          <benefits-title class="lg:pr-10" :text="benefitsInfo?.title ?? ''" :highlighted="['guaranteed', 'гарантировать']" />
+          <shared-title class="lg:pr-10" :text="benefitsInfo?.title ?? ''" :highlighted="['guaranteed', 'гарантировать']" />
           <p class="xl:text-[20px] lg:pr-80">
             {{ benefitsInfo?.description }}
           </p>
