@@ -1,7 +1,7 @@
-import { normalizeError } from './normalizeError'
+import { normalizeError } from './normalizeError';
 
 export function externalApi<T = unknown>(path: string, opts: Parameters<typeof $fetch>[1] = {}): Promise<T> {
-  const config = useRuntimeConfig()
+  const config = useRuntimeConfig();
 
   return $fetch<T>(path, {
     baseURL: config.apiBaseUrl,
@@ -17,7 +17,7 @@ export function externalApi<T = unknown>(path: string, opts: Parameters<typeof $
       throw createError({
         statusCode: response.status,
         data: normalizeError(response.status, response._data),
-      })
+      });
     },
-  })
+  });
 }
