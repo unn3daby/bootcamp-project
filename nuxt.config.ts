@@ -22,17 +22,24 @@ export default defineNuxtConfig({
   typescript: {
     typeCheck: true,
   },
-  vite: {
-    plugins: [
-      tailwindcss(),
-    ],
-  },
-
   eslint: {
     config: {
       standalone: false,
     },
   },
-
-  modules: ['@nuxt/eslint'],
+  vite: {
+    plugins: [
+      tailwindcss(),
+    ],
+    optimizeDeps: {
+      include: [
+        '@vue/devtools-core',
+        '@vue/devtools-kit',
+      ],
+    },
+  },
+  svgo: {
+    defaultImport: 'component',
+  },
+  modules: ['@nuxt/eslint', 'nuxt-svgo'],
 });

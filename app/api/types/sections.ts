@@ -12,7 +12,7 @@ export interface MultiplyItem {
   }
 }
 
-export type Multiply = MultiplyItem[]
+export type Multiply = MultiplyItem[];
 
 export interface TaskTile {
   title: string

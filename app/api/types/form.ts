@@ -1,4 +1,4 @@
-export type ContactMethod = 'telegram' | 'whatsapp' | 'email'
+export type ContactMethod = 'telegram' | 'whatsapp' | 'email';
 
 export interface FormPayload {
   name?: string
