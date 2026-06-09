@@ -1,5 +1,5 @@
 <template>
-  <div class="relative dvh">
+  <div class="relative h-dvh">
     <div class="absolute inset-0 -z-1">
       <div class="grid-layer" />
       <div class="gradient-mask-layer" />

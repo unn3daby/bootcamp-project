@@ -5,46 +5,39 @@
         multi-benefits
       </h2>
 
-      <div class="flex lg:flex-row flex-col">
-        <div class="lg:px-10 lg:p-0 p-4">
-          <h2 class="font-bold xl:text-[50px] lg:text-[42px] text-[32px] leading-none mb-4">
-            Results can only be <span class="text-secondary">guaranteed</span> when you control every step
-          </h2>
-          <p class="xl:text-[20px] lg:pr-40">
-            That's why we built
-            a full-time in-house team and custom infrastructure – tailored
-            for every task, tested daily
-            in the sweepstakes vertical
+      <div class="flex lg:flex-row flex-col gap-8">
+        <div class="lg:pl-10 lg:p-0 p-4">
+          <shared-title class="lg:pr-10" :text="benefitsInfo?.title ?? ''" :highlighted="['guaranteed', 'гарантировать']" />
+          <p class="xl:text-[20px] lg:pr-80">
+            {{ benefitsInfo?.description }}
           </p>
         </div>
 
         <div class="overflow-x-clip lg:hidden my-10">
-          <multi-benefits-carousel class="rotate-1" />
+          <benefits-carousel class="rotate-1" />
         </div>
 
-        <div class="flex flex-col gap-4 lg:pr-10 lg:p-0 p-4 relative xl:mt-30 lg:mt-20 with-img xl:text-xl text-md">
-          <multi-benefits-card>
-            We take on outsourced projects across
-            any niche — from iGaming and dating
-            to e-commerce and recruitment
-          </multi-benefits-card>
-          <multi-benefits-card>
-            We don't learn at the client's expense
-          </multi-benefits-card>
-          <multi-benefits-card>
-            We use what works — proven again and again
-          </multi-benefits-card>
+        <div class="flex flex-col gap-4 xl:min-w-150 lg:pr-10 lg:p-0 p-4 relative xl:mt-30 lg:mt-20 with-img xl:text-xl text-md">
+          <benefits-card v-for="(card, i) in benefitsInfo?.benefits" :key="i">
+            {{ card }}
+          </benefits-card>
         </div>
       </div>
     </div>
 
     <div class="hidden lg:flex flex-1  flex-col justify-end overflow-x-clip">
-      <multi-benefits-carousel class="rotate-2 mb-12" />
+      <benefits-carousel class="rotate-2 mb-12" />
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
+import { getBenefits } from '~/api/services';
+
+const { data: benefitsInfo } = useAsyncData(
+  'benefits',
+  getBenefits,
+);
 </script>
 
 <style scoped>

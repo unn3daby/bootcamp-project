@@ -19,14 +19,17 @@ export default defineNuxtConfig({
       defaultLocale: 'en',
     },
   },
+
   typescript: {
     typeCheck: true,
   },
+
   eslint: {
     config: {
       standalone: false,
     },
   },
+
   vite: {
     plugins: [
       tailwindcss(),
@@ -38,8 +41,24 @@ export default defineNuxtConfig({
       ],
     },
   },
+
   svgo: {
     defaultImport: 'component',
   },
-  modules: ['@nuxt/eslint', 'nuxt-svgo'],
+
+  i18n: {
+    strategy: 'prefix_and_default',
+    defaultLocale: 'en',
+    locales: [
+      { code: 'en', name: 'English', file: 'en.json' },
+      { code: 'ru', name: 'Russian', file: 'ru.json' },
+    ],
+  },
+
+  modules: [
+    '@nuxt/eslint',
+    'nuxt-svgo',
+    '@nuxtjs/i18n',
+    '@vueuse/nuxt',
+  ],
 });

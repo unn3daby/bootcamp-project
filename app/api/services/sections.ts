@@ -1,4 +1,4 @@
-import type { Benefits, Multiply, Tasks } from '../types/sections';
+import type { Benefits, Multiply, Tasks } from '../types';
 import { apiClient } from '../client';
 
 export function getBenefits() {
