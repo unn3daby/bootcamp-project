@@ -3,7 +3,7 @@
     <sections-main class="snap-center lg:mb-0 mb-10" />
     <sections-multi-tasks class="snap-center lg:mb-0 mb-10" />
     <sections-multi-benefits class="snap-center lg:mb-0 mb-10" />
-    <div class="snap-center lg:h-dvh">
+    <div class="snap-center lg:h-dvh lg:block hidden">
       <shared-footer />
     </div>
   </main>

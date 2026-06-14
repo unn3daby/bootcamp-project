@@ -1,6 +1,6 @@
 <template>
   <section ref="section" class="h-dvh flex flex-col overflow-hidden text-white">
-    <container class="flex flex-col lg:h-157">
+    <shared-container class="flex flex-col lg:h-157">
       <shared-section-title class="p-10 mb-10">
         multi-benefits
       </shared-section-title>
@@ -23,7 +23,7 @@
           </benefits-card>
         </div>
       </div>
-    </container>
+    </shared-container>
 
     <div class="hidden lg:flex flex-1 flex-col justify-end overflow-x-clip">
       <benefits-carousel class="rotate-2 mb-12" />

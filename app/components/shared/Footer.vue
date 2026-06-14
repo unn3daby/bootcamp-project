@@ -5,7 +5,7 @@
         href="https://instagram.com"
         target="_blank"
         rel="noopener noreferrer"
-        class="font-halvar font-bold text-sm text-yellow-400 underline underline-offset-4 hover:opacity-70 transition-opacity uppercase tracking-wider"
+        class="font-bold text-sm text-secondary underline underline-offset-4 hover:opacity-70 transition-opacity uppercase tracking-wider"
       >
         Instagram
       </a>
@@ -13,7 +13,7 @@
         href="https://t.me"
         target="_blank"
         rel="noopener noreferrer"
-        class="font-halvar font-bold text-sm text-yellow-400 underline underline-offset-4 hover:opacity-70 transition-opacity uppercase tracking-wider"
+        class="font-bold text-sm text-secondary underline underline-offset-4 hover:opacity-70 transition-opacity uppercase tracking-wider"
       >
         Telegram
       </a>
@@ -21,14 +21,14 @@
         href="https://linkedin.com"
         target="_blank"
         rel="noopener noreferrer"
-        class="font-halvar font-bold text-sm text-yellow-400 underline underline-offset-4 hover:opacity-70 transition-opacity uppercase tracking-wider"
+        class="font-bold text-sm text-secondary underline underline-offset-4 hover:opacity-70 transition-opacity uppercase tracking-wider"
       >
         LinkedIn
       </a>
     </nav>
 
     <button
-      class="font-halvar font-bold text-sm text-yellow-400 underline underline-offset-4 hover:opacity-70 transition-opacity uppercase tracking-wider flex items-center gap-1"
+      class="font-bold text-sm text-secondary underline underline-offset-4 hover:opacity-70 transition-opacity uppercase tracking-wider flex items-center gap-1"
       @click="scrollToTop"
     >
       Scroll to top
