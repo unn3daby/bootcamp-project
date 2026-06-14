@@ -26,7 +26,7 @@
         fill="none"
       />
     </svg>
-    <span class="relative z-10 px-10 py-3.5 text-xl font-semibold text-black whitespace-nowrap leading-tight pointer-events-none group-hover:text-(--secondary)">
+    <span class="relative z-10 text-xl font-semibold text-black whitespace-nowrap leading-tight pointer-events-none group-hover:text-(--secondary)">
       <slot />
     </span>
   </button>

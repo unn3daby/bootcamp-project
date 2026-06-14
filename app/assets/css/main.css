@@ -17,6 +17,7 @@
     --secondary: #FEE97D;
     --primary-gradient: linear-gradient(111.06deg, #DC8400 -3.49%, #560080 49.69%, #220032 91.86%);
     --secondary-gradient: linear-gradient(121.08deg, #9500DC -3.37%, #560080 56.37%, #220032 102.54%);
+    --main-card-gradient: linear-gradient(255deg, #9500dc 17.61%, #560080 57.18%, #220032 88.56%);
   }
 
   html {

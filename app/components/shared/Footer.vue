@@ -1,5 +1,5 @@
 <template>
-  <footer class="flex items-center justify-between px-16 py-6 bg-black">
+  <footer class="flex items-center justify-between px-16 py-6 ">
     <nav class="flex items-center gap-8">
       <a
         href="https://instagram.com"
@@ -39,6 +39,6 @@
 
 <script setup lang="ts">
 function scrollToTop() {
-  window.scrollTo({ top: 0, behavior: 'smooth' })
+  document.querySelector('main')?.scrollTo({ top: 0, behavior: 'smooth' });
 }
 </script>
